@@ -1,0 +1,21 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+
+import ar.edu.unq.po2.tp3.Counter;
+
+public class CounterTestCase {
+
+	public void setUp() throws Exception {
+		//Se crea el contador
+		Counter counter = new Counter();
+		
+		
+		//Se agregan los numeros. Un solo par y nueve impares
+		
+		
+		
+		
+	}

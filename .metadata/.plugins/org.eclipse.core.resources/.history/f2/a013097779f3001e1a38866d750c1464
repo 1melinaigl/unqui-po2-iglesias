@@ -1,0 +1,25 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import ar.edu.unq.po2.tp3.Counter;
+
+class DesarmadorTestCase {
+	private Desarmador desarmador;
+
+	@BeforeEach
+	public void setUp() throws Exception {
+		
+		desarmador = new Desarmador();
+		
+		desarmador.addNumber(1);
+		desarmador.addNumber(3);
+		desarmador.addNumber(5);
+		desarmador.addNumber(7);
+		desarmador.addNumber(9);
+		desarmador.addNumber(1);
+		desarmador.addNumber(1);
+	
+
+	
