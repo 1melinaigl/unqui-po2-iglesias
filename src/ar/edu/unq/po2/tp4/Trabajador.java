@@ -15,7 +15,6 @@ public Trabajador() {
 		return 0.1f;
 		
 	}
-
 	
 }
 
