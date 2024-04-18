@@ -51,3 +51,4 @@ public class CounterTestCase {
 		int amount = counter.countMultiplesNumbers(2);
 		assertEquals(amount, 1);
 	}
+}
