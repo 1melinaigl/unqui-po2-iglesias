@@ -7,12 +7,12 @@ public class Trabajador {
 public Trabajador() {
 	
 	
-	ingreso = new Ingreso(Sting mesDePercecpion, String Concepto, float montoTotalPercibido)
-}
+}	
+
 
 	public float getTotalPercibido() {
-		
-		return ingreso
+		this.ingreso = new Ingreso("mesDePercecpion, String Concepto, float montoTotalPercibido", "",0.1f);	
+		return 0.1f;
 		
 	}
 
