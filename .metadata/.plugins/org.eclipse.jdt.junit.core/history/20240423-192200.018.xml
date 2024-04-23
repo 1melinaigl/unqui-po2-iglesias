@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CounterTestCase" project="unqui-po2-iglesias" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="CounterTestCase" time="0.018" uniqueid="[engine:junit-jupiter]/[class:CounterTestCase]">
+    <testcase name="testEvenNumbers" classname="CounterTestCase" time="0.018" displayname="testEvenNumbers()" uniqueid="[engine:junit-jupiter]/[class:CounterTestCase]/[method:testEvenNumbers()]"/>
+  </testsuite>
+</testrun>

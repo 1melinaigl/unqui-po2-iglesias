@@ -1,0 +1,35 @@
+package ar.edu.unq.po2.tp5;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import ar.edu.unq.po2.tp4.Producto;
+
+public class CajaDeMercado {
+
+	private List<item> productos;
+	
+
+
+public void cajaDeMercado() {
+	
+	productos = new ArrayList<Producto>();
+}
+
+
+public void registrarProducto(Item unProducto) {
+	
+	
+	productos.add(unProducto);
+
+}
+
+public float obtenerMontoTotal() {
+    float montoTotal = 0;
+    for (Item item : productos) {
+        montoTotal += item.obtenerPrecio();
+    }
+    return montoTotal;
+}
+
+}

@@ -1,0 +1,17 @@
+package ar.edu.unq.po2.tp5;
+
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
+
+public class CajaDeMercado extends TestCase {
+
+	public static Test suite() {
+		TestSuite suite = new TestSuite(CajaDeMercadoTestCase.class.getName());
+		//$JUnit-BEGIN$
+
+		//$JUnit-END$
+		return suite;
+	}
+
+}

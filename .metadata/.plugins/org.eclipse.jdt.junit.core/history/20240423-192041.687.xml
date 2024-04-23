@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SupermercadoTestCase" project="unqui-po2-iglesias" tests="2" started="2" failures="0" errors="2" ignored="0">
+  <testsuite name="ar.edu.unq.po2.tp4.SupermercadoTestCase" time="0.025" displayname="SupermercadoTestCase" uniqueid="[engine:junit-jupiter]/[class:ar.edu.unq.po2.tp4.SupermercadoTestCase]">
+    <testcase name="testPrecioTotal" classname="ar.edu.unq.po2.tp4.SupermercadoTestCase" time="0.022" displayname="testPrecioTotal()" uniqueid="[engine:junit-jupiter]/[class:ar.edu.unq.po2.tp4.SupermercadoTestCase]/[method:testPrecioTotal()]">
+      <error>java.lang.NullPointerException: Cannot invoke "java.util.List.isEmpty()" because "this.productos" is null&#13;
+	at ar.edu.unq.po2.tp4.Supermercado.getPrecioTotal(Supermercado.java:39)&#13;
+	at ar.edu.unq.po2.tp4.SupermercadoTestCase.testPrecioTotal(SupermercadoTestCase.java:32)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testCantidadDeProductos" classname="ar.edu.unq.po2.tp4.SupermercadoTestCase" time="0.002" displayname="testCantidadDeProductos()" uniqueid="[engine:junit-jupiter]/[class:ar.edu.unq.po2.tp4.SupermercadoTestCase]/[method:testCantidadDeProductos()]">
+      <error>java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "this.productos" is null&#13;
+	at ar.edu.unq.po2.tp4.Supermercado.getCantidadDeProductos(Supermercado.java:33)&#13;
+	at ar.edu.unq.po2.tp4.SupermercadoTestCase.testCantidadDeProductos(SupermercadoTestCase.java:24)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

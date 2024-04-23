@@ -1,0 +1,15 @@
+package ar.edu.unq.po2.tp5;
+
+public class FacturaDeServicio extends Factura {
+
+	public FacturaDeServicio() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public double calcularMontoTotal() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

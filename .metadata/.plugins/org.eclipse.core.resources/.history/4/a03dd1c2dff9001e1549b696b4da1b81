@@ -1,0 +1,10 @@
+package ar.edu.unq.po2.tp5;
+
+public class ProductoDeEmpresa extends Producto {
+
+	
+public ProductoDeEmpresa(String nombre, float precio, int stock) {
+	
+	super(nombre, precio, stock);
+}
+

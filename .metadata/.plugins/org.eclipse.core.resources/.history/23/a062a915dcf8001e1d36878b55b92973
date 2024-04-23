@@ -1,0 +1,50 @@
+package ar.edu.unq.po2.tp4;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Supermercado {
+
+	private String nombre;
+	private String direccion;
+	private List<Producto> productos;
+	
+	
+	
+	
+public Supermercado(String nombre, String direccion, List<Producto> productos)	{
+	
+	this.nombre = nombre;
+	this.direccion = direccion;
+	productos = new ArrayList<Producto>();
+	
+}
+
+public int cantidadDeProductos() { 
+	
+	return productos.size();
+}
+
+public double sumaDeLosPrecios() {
+	
+	double precioTotal = 0;
+	if (!productos.isEmpty()) {
+		for (Producto producto : productos) { 
+		
+			precioTotal += producto.getPrecio();
+	}	
+	}
+	return precioTotal;
+	
+	
+}
+	
+}
+	
+	
+	
+	
+	
+}
+
+

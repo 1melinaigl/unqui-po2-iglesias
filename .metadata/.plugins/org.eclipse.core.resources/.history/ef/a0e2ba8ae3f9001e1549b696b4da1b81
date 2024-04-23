@@ -1,0 +1,15 @@
+package ar.edu.unq.po2.tp5;
+
+public class ProductoDeCooperativa extends Producto {
+
+	public ProductoDeCooperativa(String nombre, float precioBase, int stock) {
+		super(nombre, precioBase, stock);
+		
+	}
+
+
+public double obtenerPrecio() {
+	
+	
+	return super.getPrecioBase() * 0.9;
+}

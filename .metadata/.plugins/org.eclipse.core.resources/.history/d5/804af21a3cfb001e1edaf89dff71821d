@@ -1,0 +1,17 @@
+package ar.edu.unq.po2.tp5;
+
+public class FacturaDeImpuesto extends Factura {
+	
+	private float tasaFija;
+
+	public FacturaDeImpuesto() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public double calcularMontoTotal() {
+		// TODO Auto-generated method stub
+		return tasaFija;
+	}
+
+}

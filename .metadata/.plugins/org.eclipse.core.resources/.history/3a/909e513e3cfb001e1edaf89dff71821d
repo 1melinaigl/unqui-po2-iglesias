@@ -1,0 +1,21 @@
+package ar.edu.unq.po2.tp5;
+
+public class FacturaDeServicio extends Factura {
+	
+	private double costoUnidadConsumida;
+	private int cantidadDeUnidadConsumida;
+	
+
+	public FacturaDeServicio() {
+		super();
+		
+		
+	}
+
+	@Override
+	public double calcularMontoTotal() {
+		
+		return cantidadDeUnidadConsumida * costoUnidadConsumida;
+	}
+
+}

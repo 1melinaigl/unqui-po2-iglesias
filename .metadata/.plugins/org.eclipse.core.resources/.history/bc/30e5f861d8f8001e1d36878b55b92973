@@ -1,0 +1,20 @@
+package ar.edu.unq.po2.tp4;
+
+public class ProductoDePrimeraNecesidad extends Producto {
+
+	public ProductoDePrimeraNecesidad(String nombre, double precioBase) {
+		super(nombre, precioBase);
+		this.precioBase = this.precioBase * 0.9;
+		
+	}
+
+	public double getPrecioPrimeraNecesidad() {
+		return precioPrimeraNecesidad;
+	}
+
+	public void setPrecioPrimeraNecesidad(double precioPrimeraNecesidad) {
+		this.precioPrimeraNecesidad = precioPrimeraNecesidad;
+	}
+	
+	
+}

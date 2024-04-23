@@ -2,7 +2,11 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeEach"/>
+    <fullyQualifiedTypeName name="ar.edu.unq.po2.tp3.Desarmador"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="ar.edu.unq.po2.tp.Punto"/>
+    <fullyQualifiedTypeName name="ar.edu.unq.po2.tp3.Point"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="ar.edu.unq.po2.tp3.Desarmador"/>
+    <fullyQualifiedTypeName name="ar.edu.unq.po2.tp3.Persona"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,36 @@
+package ar.edu.unq.po2.tp5;
+
+public class Producto {
+
+	private String nombre;
+	private double precio;
+	private int stock;
+	
+	
+	abstract class Producto {
+	    private String nombre;
+	    private double precio;
+	    private int stock;
+
+	    public abstract double getPrecio();
+
+	    public String getNombre() {
+	        return nombre;
+	    }
+
+	    public void setNombre(String nombre) {
+	        this.nombre = nombre;
+	    }
+
+	    public void setPrecio(double precioBase) {
+	        this.precio = precio;
+	    }
+
+	    public int getStock() {
+	        return stock;
+	    }
+
+	    public void setStock(int stock) {
+	        this.stock = stock;
+	    }
+	}
