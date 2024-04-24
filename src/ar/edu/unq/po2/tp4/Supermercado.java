@@ -34,18 +34,17 @@ public int getCantidadDeProductos() {
 }
 
 public double getPrecioTotal() {
-	
-	double precioTotal = 0;
-	if (!productos.isEmpty()) {
-		for (Producto producto : productos) { 
-		
-			precioTotal += producto.getPrecio();
-	}	
-	}
-	return precioTotal;
-	
-	
+    double precioTotal = 0;
+    if (!productos.isEmpty()) {
+        for (Producto producto : productos) { 
+            precioTotal += producto.getPrecio();
+        }
+    } else { 
+        precioTotal = 0;
+    }
+    return precioTotal;
 }
+
 
 public String getNombre() {
 	return nombre;

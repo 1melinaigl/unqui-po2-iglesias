@@ -15,6 +15,7 @@ public class ProductoTest {
 	public void setUp() {
 		arroz = new Producto("Arroz", 18.9d, true);
 		vino = new Producto("Vino", 55d);
+		
 	}
 	
 	@Test

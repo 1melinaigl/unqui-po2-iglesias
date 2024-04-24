@@ -16,6 +16,20 @@ public class Trabajador {
 		
 	}
 	
+	public List<Ingreso> getIngresos() {
+		return ingresos;
+	}
+
+	public void setIngresos(List<Ingreso> ingresos) {
+		this.ingresos = ingresos;
+	}
+
+	public void addIngreso(Ingreso unIngreso) {
+		
+		ingresos.add(unIngreso);
+		
+	}
+	
 	public double getTotalPercibido() {
 		
 		double totalPercibido = 0;
@@ -32,9 +46,12 @@ public class Trabajador {
 				totalMontoImponible += ingreso.getMontoImponible();
 			}
 			
-			return totalMontoImponible;
+			return totalMontoImponible;	
+	}
+	
+	public double getImpuestoAPagar() {
 		
-		
+		return getMontoImponible() * 0.02;		
 		
 	}
 }
