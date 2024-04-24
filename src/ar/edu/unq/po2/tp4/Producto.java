@@ -7,55 +7,55 @@ public class Producto {
 		private boolean esPrecioCuidado = false;
 		
 
-public Producto(String nombre, double precioBase, boolean esPrecioCuidado) {
+		public Producto(String nombre, double precioBase, boolean esPrecioCuidado) {
 	
-	this.nombre = nombre;
-	this.precioBase = precioBase;
-	this.esPrecioCuidado = esPrecioCuidado;
+			this.nombre = nombre;
+			this.precioBase = precioBase;
+			this.esPrecioCuidado = esPrecioCuidado;
 		
 }
 
-public Producto(String unNombre, double precio) {
+		public Producto(String unNombre, double precio) {
 	
-	this.nombre = unNombre;
-	this.precioBase = precio;
+			this.nombre = unNombre;
+			this.precioBase = precio;
 }
 
 
-public String getNombre() {
-	return nombre;
+		public String getNombre() {
+			return nombre;
 }
 
 
-public void setNombre(String nombre) {
-	this.nombre = nombre;
+		public void setNombre(String nombre) {
+			this.nombre = nombre;
 }
 
 
-public double getPrecio() {
-	return precioBase;
+		public double getPrecio() {
+			return precioBase;
 }
 
 
-public void setPrecio(double precioBase) {
-	this.precioBase = precioBase;
+		public void setPrecio(double precioBase) {
+			this.precioBase = precioBase;
 }
 
 
-public boolean esPrecioCuidado() {
-	return this.esPrecioCuidado;
+		public boolean esPrecioCuidado() {
+			return this.esPrecioCuidado;
 }
 
 
-public void setEsPrecioCuidado(boolean esPrecioCuidado) {
-	this.esPrecioCuidado = esPrecioCuidado;
+		public void setEsPrecioCuidado(boolean esPrecioCuidado) {
+			this.esPrecioCuidado = esPrecioCuidado;
 }
 
-public double aumentarPrecio(double unAumento) {  
+		public double aumentarPrecio(double unAumento) {  
 	
-	double nuevoPrecio = this.precioBase += unAumento; 
+			double nuevoPrecio = this.precioBase += unAumento; 
 	
-	return nuevoPrecio;
+			return nuevoPrecio;
 }
 
 

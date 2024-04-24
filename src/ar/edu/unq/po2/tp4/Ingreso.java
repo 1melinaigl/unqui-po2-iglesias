@@ -17,4 +17,15 @@ public abstract class Ingreso {
     }
 
     public abstract double getMontoImponible();
+
+
+	public String getMesDePercepcion() {
+		
+		return mesDePercepcion;
+	}
+	
+	public String getConcepto() {
+		
+		return concepto;
+	}
 }
