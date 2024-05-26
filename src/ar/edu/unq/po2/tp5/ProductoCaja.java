@@ -1,18 +1,21 @@
 package ar.edu.unq.po2.tp5;
 	
-abstract class Item {
+public class ProductoCaja implements Pagable {
     private String nombre;
     private double precioBase;
     private int stock;
     
     
-    public Item(String nombre, double precioBase, int stock) {
+    public ProductoCaja(String nombre, double precioBase, int stock) {
         this.nombre = nombre;
         this.precioBase = precioBase;
         this.stock = stock;
     }
 
-    public abstract double obtenerPrecio();
+    public double obtenerPrecio() {
+    	
+    	return getPrecioBase();
+    }
 
     public String getNombre() {
         return nombre;
@@ -38,7 +41,7 @@ abstract class Item {
         this.stock = stock;
     }
 
-	protected void decrementarStock() {
+	protected void procesar() {
 		
 		stock =- 1;
 	}

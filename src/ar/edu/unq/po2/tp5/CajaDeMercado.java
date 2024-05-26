@@ -3,37 +3,44 @@ package ar.edu.unq.po2.tp5;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CajaDeMercado implements Agencia{
+public class CajaDeMercado {
 
-	private List<Item> productos;
+	private List<Pagable> pagables;
 	
 
-
-public void cajaDeMercado() {
 	
-	productos = new ArrayList<Item>();
-}
-
-
-public void registrarProducto(Item unProducto) {
+	public CajaDeMercado() {
+		this.pagables = new ArrayList<Pagable>();
+	}
 	
+
+	public double registrarProducto() {
+		
+
+		double monto = 0;
+		for (Pagable pagable : this.pagables) {
+			
+			monto += pagable.obtenerPrecio();
+			pagable.procesar();
+			
+			
+		}
+		return monto;
+	}
 	
-	productos.add(unProducto);
-	unProducto.decrementarStock();
 
-}
+	public List<Pagable> getPagable() {
+		return pagables;
+	}
 
-public float obtenerMontoTotal() {
-    float montoTotal = 0;
-    for (Item item : productos) {
-        montoTotal += item.obtenerPrecio();
-    }
-    return montoTotal;
-}
 
-public void registrarPago(Factura factura) {
+	public void setProductos(List<Pagable> pagables) {
+		this.pagables = pagables;
+	}
+
+	public void addProducto(Pagable unPagable) {
+		
+	 pagables.add(unPagable);
+	}
 	
-	System.out.println("Se ha registrado un pago por un monto de: " + factura.calcularMontoTotal());
-}
-
 }
