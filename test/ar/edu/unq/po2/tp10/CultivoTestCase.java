@@ -9,17 +9,18 @@ import org.junit.jupiter.api.Test;
 
 class CultivoTestCase {
 	
-	private CultivoPuro cultivoPuro;
-	private CultivoPuro soja;
-	private CultivoPuro trigo;
+	private CultivoDeSoja soja;
+	private CultivoDeTrigo trigo;
 	private CultivoMixto cultivoMixto;
+	
+	
 
 
 	
 	@BeforeEach
 	
 	void setUp() {
-		cultivoMixto = new CultivoMixto();
+		cultivoMixto = new CultivoMixto(new ArrayList<Cultivo>());
 		soja = new CultivoDeSoja();
 		trigo = new CultivoDeTrigo();
 	 	cultivoMixto.addCultivo(soja);
