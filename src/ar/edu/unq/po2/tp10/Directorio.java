@@ -45,13 +45,11 @@ public class Directorio implements FileSystem {
 	}
 	@Override
 	public FileSystem lastModified() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+		
 	@Override
 	public FileSystem oldestElement() {
 		
-		return getArchivos().get(0);
+		
 	}
 	
 	
