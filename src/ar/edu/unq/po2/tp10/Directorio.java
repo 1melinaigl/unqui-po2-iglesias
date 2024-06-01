@@ -45,6 +45,8 @@ public class Directorio implements FileSystem {
 	}
 	@Override
 	public FileSystem lastModified() {
+	
+	}
 		
 	@Override
 	public FileSystem oldestElement() {

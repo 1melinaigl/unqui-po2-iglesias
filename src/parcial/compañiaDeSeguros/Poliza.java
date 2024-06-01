@@ -6,9 +6,23 @@ public class Poliza {
 	private List<Item> inventario;
 	private List<GastoAdministrativo> gastosAdministrativos;
 	private Fase fasePoliza;
+	private BonificacionService bonificador;
 	
 	
 	
+	public Poliza(List<Item> inventario, List<GastoAdministrativo> gastosAdministrativos, Fase fasePoliza,
+			BonificacionService bonificador) {
+		super();
+		this.inventario = inventario;
+		this.gastosAdministrativos = gastosAdministrativos;
+		this.fasePoliza = fasePoliza;
+		this.bonificador = bonificador;
+	}
+
+
+
+
+
 	public Poliza(List<Item> inventario, List<GastoAdministrativo> gastosAdministrativos) {
 		super();
 		this.inventario = inventario;
@@ -27,7 +41,14 @@ public class Poliza {
 	}
 
 
+	public BonificacionService getBonificador() {
+		return bonificador;
+	}
 
+
+	public void setBonificador(BonificacionService bonificador) {
+		this.bonificador = bonificador;
+	}
 
 
 	public Fase getFasePoliza() {
@@ -35,16 +56,9 @@ public class Poliza {
 	}
 
 
-
-
-
 	public void setFasePoliza(Fase fasePoliza) {
 		this.fasePoliza = fasePoliza;
 	}
-
-
-
-
 
 	public List<Item> getInventario() {
 		return inventario;
@@ -60,13 +74,9 @@ public class Poliza {
 	}
 
 
-
-
 	public void setGastosAdministrativos(List<GastoAdministrativo> gastosAdministrativos) {
 		this.gastosAdministrativos = gastosAdministrativos;
 	}
-
-
 
 
 	public double montoAsegurado() {
@@ -108,5 +118,21 @@ public class Poliza {
 	public void cancelar() {
 		
 		getFasePoliza().cancelar();
+	}
+	
+	public void aplicarBeneficio(String titular, int unCodigo) {
+		
+		if (this.getBonificador().codigoValido(unCodigo)) {
+			
+			this.getFasePoliza().bonificar();
+			this.bonificador.anularCodigo(unCodigo);
+			this.bonificador.notificarTitular(titular, unCodigo);
+			
+			
+			
+			
+		}
+		
+		
 	}
 }

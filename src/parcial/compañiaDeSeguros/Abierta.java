@@ -2,9 +2,6 @@ package parcial.compañiaDeSeguros;
 
 public class Abierta extends Fase {
 	
-	
-	
-	
 
 	public Abierta(Poliza poliza) {
 		super(poliza);
@@ -34,6 +31,13 @@ public class Abierta extends Fase {
 	public void cancelar() {
 		// TODO Auto-generated method stub
 
+	}
+
+	@Override
+	protected void bonificar() {
+		
+		this.getPoliza().getGastosAdministrativos().add(new GastoAdministrativo("Bonificación Administrativa", -500));
+		
 	}
 
 }

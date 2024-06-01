@@ -122,9 +122,8 @@ public class ActividadSemanal {
 
     @Override
     public String toString() {
-        return "Deporte: " + deporte + ". Dia: " + diaDeLaSemana + " A LAS: " + horaDeInicio + ". Duración: " +  duracion " 
-    }
+        return "Deporte: " + deporte + ". Dia: " + diaDeLaSemana + " A LAS: " + horaDeInicio + ". Duración: " +  duracion;
                    
     }
-
+}
 

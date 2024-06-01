@@ -1,5 +1,8 @@
 package parcial.compañiaDeSeguros;
 
+import java.util.Comparator;
+import java.util.Optional;
+
 public class Cerrada extends Fase {
 
 	public Cerrada(Poliza poliza) {
@@ -31,6 +34,15 @@ public class Cerrada extends Fase {
 	public void cancelar() {
 		// TODO Auto-generated method stub
 
+	}
+
+	@Override
+	protected void bonificar() {
+		
+	Optional<GastoAdministrativo> mayorGasto = this.getPoliza().getGastosAdministrativos().stream().max(Comparator.comparingDouble(GastoAdministrativo::getMonto));
+	this.getPoliza().getGastosAdministrativos().remove(mayorGasto);
+		
+		
 	}
 
 }

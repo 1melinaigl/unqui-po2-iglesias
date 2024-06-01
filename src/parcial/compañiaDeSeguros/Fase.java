@@ -31,4 +31,6 @@ public abstract class Fase {
 
 	public abstract void cancelar();
 
+	protected abstract void bonificar();
+
 }

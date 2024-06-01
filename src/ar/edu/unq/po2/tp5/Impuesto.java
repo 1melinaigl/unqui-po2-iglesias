@@ -34,4 +34,12 @@ public class Impuesto extends Factura {
 		return getTasaDeServicio();
 	}
 
+
+
+	@Override
+	public void procesar() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

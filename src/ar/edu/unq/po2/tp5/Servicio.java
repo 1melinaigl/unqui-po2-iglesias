@@ -31,6 +31,11 @@ public class Servicio extends Factura {
 	public double obtenerPrecio() {
 		return getCostoPorUnidad() * getCantidadConsumida();
 	}
+	@Override
+	public void procesar() {
+		// TODO Auto-generated method stub
+		
+	}
 
 
 }

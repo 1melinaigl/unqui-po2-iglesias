@@ -32,4 +32,10 @@ public class Vigente extends Fase {
 
 	}
 
+	@Override
+	protected void bonificar() {
+		this.getPoliza().getGastosAdministrativos().clear();
+		
+	}
+
 }

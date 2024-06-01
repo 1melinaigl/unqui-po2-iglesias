@@ -41,7 +41,7 @@ public class ProductoCaja implements Pagable {
         this.stock = stock;
     }
 
-	protected void procesar() {
+	public void procesar() {
 		
 		stock =- 1;
 	}
