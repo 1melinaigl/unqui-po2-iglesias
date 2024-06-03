@@ -70,7 +70,6 @@ public abstract class Actividad {
 		this.empleados = empleados;
 	}
 
-
 	public abstract double inversionTotal();
 	
 }

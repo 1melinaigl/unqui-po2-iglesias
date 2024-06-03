@@ -9,8 +9,7 @@ public class Vigente extends Fase {
 
 	@Override
 	public void agregarItem(Item unItem) {
-		// TODO Auto-generated method stub
-
+		this.cancelar();
 	}
 
 	@Override

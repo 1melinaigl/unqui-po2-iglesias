@@ -13,6 +13,26 @@ public class Programa extends Actividad {
 		this.actividades = actividades;
 	}
 
+	public List<Actividad> getActividades() {
+		return actividades;
+	}
+
+	public void setActividades(List<Actividad> actividades) {
+		this.actividades = actividades;
+	}
+
+	public double getCostoGestion() {
+		return costoGestion;
+	}
+
+	public void setCostoGestion(double costoGestion) {
+		this.costoGestion = costoGestion;
+	}
+
+	public LocalDate getFechaDeInicio() {
+		return this.actividades.stream().min(null)
+	}
+	
 	@Override
 	public double inversionTotal() {
 		

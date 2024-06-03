@@ -19,28 +19,6 @@ public class Poliza {
 		this.bonificador = bonificador;
 	}
 
-
-
-
-
-	public Poliza(List<Item> inventario, List<GastoAdministrativo> gastosAdministrativos) {
-		super();
-		this.inventario = inventario;
-		this.gastosAdministrativos = gastosAdministrativos;
-	}
-	
-	
-	
-	
-	
-	public Poliza(List<Item> inventario, List<GastoAdministrativo> gastosAdministrativos, Fase fasePoliza) {
-		super();
-		this.inventario = inventario;
-		this.gastosAdministrativos = gastosAdministrativos;
-		this.fasePoliza = fasePoliza;
-	}
-
-
 	public BonificacionService getBonificador() {
 		return bonificador;
 	}
